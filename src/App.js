@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Classifier from "./Classifier";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1 className="title">🎯 AI Exam Cheating Detection</h1>
+      <p className="subtitle">
+        Detecting: Looking Straight | Left | Down
+      </p>
+
+      <div className="card">
+        <Classifier />
+      </div>
     </div>
   );
 }
